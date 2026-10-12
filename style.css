@@ -261,3 +261,48 @@ nav a.active { color: var(--ink); font-weight: 600; }
   .about-hero { flex-direction: column; align-items: flex-start; gap: 20px; }
   .avatar { flex-basis: 110px; width: 110px; height: 110px; font-size: 38px; }
 }
+
+.comps-wrap {
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  width: min(1180px, calc(100vw - 32px));
+  background: #fff;
+  border: 1px solid var(--line);
+  padding: 14px 16px 18px;
+  margin: 4px 0 20px;
+}
+
+.comps-title { font-family: Calibri, Carlito, system-ui, sans-serif; font-weight: 700; font-size: 15px; color: var(--accent); }
+.comps-sub { font-family: Calibri, Carlito, system-ui, sans-serif; font-style: italic; font-size: 11px; border-bottom: 1px solid var(--accent); padding-bottom: 2px; margin-bottom: 2px; }
+.comps-scroll { overflow-x: auto; }
+
+table.comps {
+  width: 100%;
+  min-width: 1000px;
+  border-collapse: collapse;
+  font-family: Calibri, Carlito, system-ui, sans-serif;
+  font-size: 11.5px;
+  font-variant-numeric: tabular-nums;
+  line-height: 1.35;
+}
+
+table.comps th, table.comps td { padding: 1px 6px; text-align: right; white-space: nowrap; }
+table.comps .l { text-align: left; }
+table.comps .c { text-align: center; }
+table.comps .gap { width: 18px; padding: 0; background: transparent !important; }
+table.comps thead th { background: var(--accent); color: #fff; font-weight: 600; vertical-align: bottom; white-space: normal; text-align: center; }
+table.comps thead tr.grp th { font-size: 11px; border-bottom: 1px solid #fff; padding-top: 3px; }
+table.comps thead tr:last-child th { padding-bottom: 4px; }
+table.comps tr.target td { background: #dbe4f1; }
+table.comps tbody tr:first-child td { padding-top: 3px; }
+table.comps tbody.stats td { background: #dbe4f1; }
+table.comps tbody.stats tr:first-child td { border-top: 14px solid #fff; }
+table.comps tbody.stats tr.b td { font-weight: 700; }
+table.comps tbody.implied tr.ihead th { background: var(--accent); color: #fff; font-weight: 600; text-align: right; }
+table.comps tbody.implied tr.ihead th.l { text-align: left; }
+table.comps tbody.implied tr.ihead th, table.comps tbody.implied tr.ihead + tr td { }
+table.comps tbody.implied tr:first-child th { border-top: 14px solid #fff; }
+table.comps tbody.implied tr.total td { font-weight: 700; background: #dbe4f1; border-top: 1px solid var(--ink); border-bottom: 1px solid var(--ink); }
+
+.download a { font-family: system-ui, sans-serif; font-weight: 600; color: var(--accent); }
